@@ -10,6 +10,9 @@ require_once('widgets/class-wp-widget-categories.php');
             'primary' => __("Primary Menu")
         ));
 
+        //Featured Image Support
+        add_theme_support('post-thumbnails');
+
     }
 
     add_action("after_setup_theme", "we_theme_setup");
