@@ -1,4 +1,6 @@
 <?php
+
+require_once('widgets/class-wp-widget-categories.php');
     // Theme Support
     function we_theme_setup(){
         add_theme_support('custom-logo');
@@ -36,3 +38,11 @@ function ms_init_widgets($id){
 }
 
 add_action('widgets_init', 'ms_init_widgets');
+
+// Register Custom Widgets
+
+function ms_register_widgets(){
+    register_widget('WP_Widget_Categories_Custom');
+}
+
+add_action('widgets_init', 'ms_register_widgets');

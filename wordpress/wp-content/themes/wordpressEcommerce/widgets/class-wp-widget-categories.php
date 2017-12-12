@@ -14,7 +14,7 @@
  *
  * @see WP_Widget
  */
-class WP_Widget_Categories extends WP_Widget {
+class WP_Widget_Categories_Custom extends WP_Widget {
 
 	/**
 	 * Sets up a new Categories widget instance.
@@ -108,7 +108,7 @@ class WP_Widget_Categories extends WP_Widget {
 <?php
 		} else {
 ?>
-		<ul>
+		<ul class="menu vertical">
 <?php
 		$cat_args['title_li'] = '';
 
