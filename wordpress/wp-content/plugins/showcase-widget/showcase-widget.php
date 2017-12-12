@@ -1,9 +1,9 @@
 <?php
 /*
-    Plugin Name: Showcase Widget
-    Description: Simple showcase area
-    Version: 1.0
-    Author: Scot Pfleghaar
+*   Plugin Name: Showcase Widget
+*  Description: Simple showcase area
+*   Version: 1.0
+*   Author: Scot Pfleghaar
 */
 
 // Include class file

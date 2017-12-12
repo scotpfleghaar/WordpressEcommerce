@@ -30,16 +30,17 @@
     </div>
   </header>
 
+
+
+  <?php if(is_active_sidebar('showcase')) : ?>
   <div class="row showcase">
     <div class="large-12 columns">
       <div class="callout secondary">
-        <h1>Discount Clothing</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id vestibulum nulla. Maecenas ultricies at urna
-          nec pellentesque. Integer pharetra orci in est viverra rutrum. Nunc ullamcorper tincidunt sapien at fringilla</p>
-        <button class="button">Start Shopping</button>
+       <?php dynamic_sidebar('showcase');?>
       </div>
     </div>
   </div>
+    <?php endif; ?>
 
   <div class="row">
     <div class="large-8 medium-8 columns">
@@ -79,30 +80,9 @@
     </div>
 
     <div class="large-4 medium-4 columns">
-      <div class="callout">
-        <h3>Categories</h3>
-        <ul class="menu vertical">
-          <li>
-            <a href="#">Shirts</a>
-          </li>
-          <li>
-            <a href="#">Pants</a>
-          </li>
-          <li>
-            <a href="#">Hats</a>
-          </li>
-          <li>
-            <a href="#">Shoes</a>
-          </li>
-        </ul>
-      </div>
-      <br>
-      <div class="callout">
-        <h5>Sidebar heading</h5>
-        <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on
-          making them your own.</p>
-        <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-      </div>
+     <?php if(is_active_sidebar('sidebar')) : ?>
+      <?php dynamic_sidebar('sidebar'); ?>
+    <?php endif;?>
     </div>
   </div>
 
